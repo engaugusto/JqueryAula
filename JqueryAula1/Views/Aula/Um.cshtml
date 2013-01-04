@@ -1,0 +1,62 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Um</title>
+    @if ((bool)@ViewBag.Resolvido == false)
+    {
+    <script type="text/javascript">
+        //Ao iniciar a tela
+        window.onload = function () {
+            Init();
+        };
+
+        //Chamada quando o documento estiver pronto
+        function Init() {
+            //Ao iniciar
+            alert('Implementar Inicio');
+        };
+
+        function Somar() {
+            //Ao Somar
+            alert('Implementar Somar');
+        };
+
+        function Reset() {
+            //Limpar
+            alert('Implementar Limpar');
+        };
+    </script>
+    }
+    else
+    {
+        <script type='text/javascript' src='/Scripts/Resolvido/Aula1Resolvido.js'></script>
+    }
+        
+</head>
+<body>
+    <div>
+        @{
+            Html.RenderPartial("Menu");
+        }
+        @if ((bool)@ViewBag.Resolvido == false) {
+            <a href='UmResolvido'>Resolvido</a>
+        }else{
+            <a href='Um'>Normal</a>
+        }
+        <h1>Aula 1 - Recordando Javascript</h1>
+        Teste Javascript Funciona ? <input type='button' value='Testar' onclick="javascript:alert('Funciona');return false;"  />
+
+        <h2>Fazer uma calculadora simples</h2>
+        Número 1 : <input type='text' id='num1' value='' /><br />
+        Número 2 : <input type='text' id='num2' value='' /><br />
+        <input type="button" value='Somar' onclick='Somar()' />
+        <input type='button' value='Limpar' onclick='Reset()' /> <br />
+        <label id='lblReposta' value='' />
+    </div>
+</body>
+</html>

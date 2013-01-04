@@ -1,0 +1,41 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Dois</title>
+    <script type='text/javascript' src="/Content/jquery.min.js"></script>
+    @if ((bool)@ViewBag.Resolvido == false)
+    {
+        <script type='text/javascript' src='/Scripts/Aulas/Aula2.js'></script>
+    }
+    else
+    {
+        <script type='text/javascript' src='/Scripts/Resolvido/Aula2Resolvido.js'></script>
+    }
+</head>
+<body>
+    <div>
+        @{
+            Html.RenderPartial("Menu");
+        }
+        @if ((bool)@ViewBag.Resolvido == false) {
+            <a href='DoisResolvido'>Resolvido</a>
+        }else{
+            <a href='Dois'>Normal</a>
+        }
+        <h1>Aula 2 - Utilizando Jquery</h1>
+        Teste Javascript Funciona ? <input type='button' value='Testar' onclick="javascript:alert('Funciona');return false;"  />
+
+        <h2>Fazer uma calculadora simples</h2>
+        Número 1 : <input type='text' id='num1' value=''/><br />
+        Número 2 : <input type='text' id='num2' value=''/><br />
+        <input type="button" value='Somar' id='Somar' />
+        <input type='button' value='Limpar' id='Reset' /> <br />
+        <label id='lblReposta' value='' />
+    </div>
+</body>
+</html>

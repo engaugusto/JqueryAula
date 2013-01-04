@@ -1,0 +1,85 @@
+﻿@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tres</title>
+    <script type='text/javascript' src="/Content/jquery.min.js"></script>
+    <style type="text/css">
+        table, th, tr, td
+        {
+            border: 1px solid black;
+        }
+        .hidden 
+        {
+            display:none;
+        }
+    </style>
+    @if ((bool)@ViewBag.Resolvido == false)
+    {
+        <script type='text/javascript' src='/Scripts/Aulas/Aula3.js'></script>
+    }
+    else
+    {
+        <script type='text/javascript' src='/Scripts/Resolvido/Aula3Resolvido.js'></script>
+    }
+</head>
+<body>
+    <div>
+        @{
+            Html.RenderPartial("Menu");
+        }
+        @if ((bool)@ViewBag.Resolvido == false)
+        {
+            <a href='TresResolvido'>Resolvido</a>
+        }
+        else
+        {
+            <a href='Tres'>Normal</a>
+        }
+        <h1>
+            Aula 3 - Seletores em Jquery</h1>
+        Jquery possui algums tipos de seletores:<br />
+        <ul>
+            <li>$('#Id') - get by id</li>
+            <li>$('.classe') - get by class</li>
+            <li>$('#Id', $('#Pai') ) - Pega o elemento Id dentro dos nós fihos do Pai</li>
+        </ul>
+        <table id='tabela'>
+            <thead>
+                <tr>
+                    <th>
+                        Indice
+                    </th>
+                    <th>
+                        Massa
+                    </th>
+                    <th>
+                        Altura
+                    </th>
+                    <th>
+                        IMC
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class='hidden'>
+                  <td>
+                    <input type='text' class='indice' />
+                  </td>
+                  <td>
+                    <input type='text' class='massa' />
+                  </td>
+                  <td>
+                    <input type='text' class='altura' />
+                  </td>
+                  <td>
+                    <input type='text' class='imc' />
+                  </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
