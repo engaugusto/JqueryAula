@@ -44,5 +44,20 @@ namespace JqueryAula1.Controllers
             ViewBag.Resolvido = true;
             return View("Tres");
         }
+
+        public ActionResult Quatro()
+        {
+            return View();
+        }
+
+        public void SalvarJson(ObjToSave[] arrayObj)
+        {
+
+        }
+    }
+    public class ObjToSave {
+        public string id { get; set; }
+        public string campo1 { get; set; }
+        public string campo2 { get; set; }
     }
 }

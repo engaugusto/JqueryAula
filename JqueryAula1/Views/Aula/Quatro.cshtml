@@ -1,0 +1,111 @@
+﻿@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Quatro</title>
+    <script type='text/javascript' src="/Content/jquery.min.js"></script>
+    <script type='text/javascript' src="/Scripts/Aulas/Aula4.js"></script>
+    <style type="text/css">
+        #tabela, td
+        {
+            border: 1px solid black;
+        }
+        .linhaOculta
+        {
+            display:none;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>
+            Aula 4 - Utilizando Jquery</h1>
+            <button id='Novo'>Nova</button>
+            <input type='hidden' id='hdfId'/>
+        <table id='tabela' >
+            <thead>
+                <tr>
+                    <td>
+                        Tit1
+                    </td>
+                    <td>
+                        Tit2
+                    </td>
+                    <td>
+                        Tit3
+                    </td>
+                    <td>
+                      Excluir
+                    </td>
+                    <td>
+                      Visualizar dados
+                    </td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class='linhaOculta'>
+                    <td>
+                        
+                    </td>
+                    <td>
+                        
+                    </td>
+                    <td>
+                        
+                    </td>
+                    <td>
+                        <button class='exc' id='btnExcluir'>Excluir</button>
+                    </td>
+                    <td>
+                        <button class='vis' id='btnVisualizar'>Visualizar</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        
+                    </td>
+                    <td>
+                        Augusto
+                    </td>
+                    <td>
+                        BRQ
+                    </td>
+                    <td>
+                        <button class='exc' id='btnExcluir'>Excluir</button>
+                    </td>
+                    <td>
+                        <button class='vis' id='btnVisualizar'>Visualizar</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        
+                    </td>
+                    <td>
+                        Augusto 2
+                    </td>
+                    <td>
+                        BRQ
+                    </td>
+                    <td>
+                        <button class='exc' id='btnExcluir'>Excluir</button>
+                    </td>
+                    <td>
+                        <button class='vis' id='btnVisualizar'>Visualizar</button>
+                    </td>
+                </tr>
+            </tbody>
+            <p>
+            Campo 1 <input type='text' id='campo1'/>
+            </p><p>
+            Campo 2 <input type='text' id='campo2'/>
+            </p>
+            <button id='salvar'>Salvar</button>
+            <button id='zebrar'>Zebrar Tabela</button>
+            <button id='sync'>Sincronizar Ajax</button>
+        </table>
+    </div>
+</body>
+</html>

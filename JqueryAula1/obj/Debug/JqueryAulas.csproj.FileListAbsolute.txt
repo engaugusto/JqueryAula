@@ -5,3 +5,10 @@ c:\users\calsilva\documents\visual studio 2010\Projects\JqueryAula1\JqueryAula1\
 c:\users\calsilva\documents\visual studio 2010\Projects\JqueryAula1\JqueryAula1\obj\Debug\ResolveAssemblyReference.cache
 c:\users\calsilva\documents\visual studio 2010\Projects\JqueryAula1\JqueryAula1\obj\Debug\JqueryAulas.dll
 c:\users\calsilva\documents\visual studio 2010\Projects\JqueryAula1\JqueryAula1\obj\Debug\JqueryAulas.pdb
+C:\Users\calsilva\Downloads\JqueryAula1\JqueryAula1\JqueryAula1\bin\JqueryAulas.dll
+C:\Users\calsilva\Downloads\JqueryAula1\JqueryAula1\JqueryAula1\bin\JqueryAulas.pdb
+C:\Users\calsilva\Downloads\JqueryAula1\JqueryAula1\JqueryAula1\bin\EntityFramework.dll
+C:\Users\calsilva\Downloads\JqueryAula1\JqueryAula1\JqueryAula1\bin\EntityFramework.xml
+C:\Users\calsilva\Downloads\JqueryAula1\JqueryAula1\JqueryAula1\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\calsilva\Downloads\JqueryAula1\JqueryAula1\JqueryAula1\obj\Debug\JqueryAulas.dll
+C:\Users\calsilva\Downloads\JqueryAula1\JqueryAula1\JqueryAula1\obj\Debug\JqueryAulas.pdb

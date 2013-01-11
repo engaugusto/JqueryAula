@@ -5,7 +5,7 @@ window.onload = function () {
 
 //Chamada quando o documento estiver pronto
 function Init() {
-    Limpar();
+    Reset();
 };
 
 function Somar() {
